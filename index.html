@@ -246,6 +246,20 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
+      box-shadow: 6px 6px 0 var(--yellow);
+      transition: transform 0.15s ease;
+    }
+    .value-card:nth-child(2) {
+      box-shadow: 6px 6px 0 var(--teal);
+    }
+    .value-card:nth-child(3) {
+      box-shadow: 6px 6px 0 var(--yellow);
+    }
+    .value-card:nth-child(4) {
+      box-shadow: 6px 6px 0 var(--teal);
+    }
+    .value-card:hover {
+      transform: translate(-2px, -2px);
     }
     .value-card svg {
       width: 28px;
@@ -265,6 +279,7 @@
       grid-column: 1 / -1;
       background: var(--yellow);
       border-color: var(--ink);
+      box-shadow: 6px 6px 0 var(--pink);
       flex-direction: row;
       align-items: center;
       gap: 16px;
